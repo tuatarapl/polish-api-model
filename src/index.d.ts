@@ -209,17 +209,6 @@ export interface TransactionDetail {
     holdExpirationDate?: string
 }
 
-export type TransactionKind = 'done' | 'pending' | 'rejected' | 'cancelled' | 'scheduled' | 'hold'
-export interface TransactionDetailExt extends TransactionDetail {
-    baseInfo: TransactionInfo 
-        & TransactionPendingInfo 
-        & TransactionRejectedInfo 
-        & TransactionCancelledInfo 
-        & TransactionScheduledInfo
-        & HoldInfo
-    kind: TransactionKind
-}
-
 export type DeliveryMode = 'ExpressD0' | 'StandardD1'
 export type DeliveryModeNonEEA = 'ExpressD0' | 'UrgentD1' | 'StandardD2'
 export type DomesticTransferSystem = 'Elixir' | 'ExpressElixir' | 'Sorbnet' |  'BlueCash' |  'Internal'
