@@ -1,0 +1,29 @@
+{
+  "name": "polish-api-model",
+  "version": "2.1.0",
+  "description": "Typescript model for Polish API",
+  "main": "src",
+  "scripts": {
+    "build": "rm -rf target && tsc",
+    "format": "tslint 'src/**/*.ts' --fix",
+    "lint": "tslint 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/tuatarapl/polish-api-model.git"
+  },
+  "keywords": [
+    "model",
+    "typescript",
+    "polish-api",
+    "psd2"
+  ],
+  "author": "Grzegorz Abramczyk <grzegorz.abramczyk@tuatara.pl>",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/tuatarapl/polish-api-model#readme",
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
