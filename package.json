@@ -4,7 +4,6 @@
   "description": "Typescript model for Polish API",
   "main": "src",
   "scripts": {
-    "build": "rm -rf target && tsc",
     "format": "tslint 'src/**/*.ts' --fix",
     "lint": "tslint 'src/**/*.ts'"
   },
