@@ -1,0 +1,1 @@
+This work is based on [Polish API](https://polishapi.org) Specification licensed under [CC BY 3.0 PL](https://creativecommons.org/licenses/by/3.0/pl/)
