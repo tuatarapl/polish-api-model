@@ -1,3 +1,5 @@
+import { TransactionCategory } from "./types";
+
 export interface  RequestHeaderAIS{
     requestId: string
     userAgent?: string
@@ -23,4 +25,20 @@ export interface AccountsRequest{
 export interface AccountInfoRequest{
     requestHeader: RequestHeaderAIS
     accountNumber: string
+}
+
+export interface TransactionInfoRequest {
+    requestHeader: RequestHeaderAISCallback
+    accountNumber: string
+    itemIdFrom?: string
+    transactionDateFrom?: string
+    transactionDateTo?: string
+    bookingDateFrom?: string
+    bookingDateTo?: string
+    minAmount?: string
+    maxAmount?: string
+    pageId?: string
+    perPage?: number
+    type?: TransactionCategory
+
 }
