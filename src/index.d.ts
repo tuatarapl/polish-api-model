@@ -12,7 +12,7 @@ export interface NameAddress {
     value?: string[]
 }
 
-type Address = string[]
+export type Address = string[]
 
 export interface BankAccountInfo {
     bicOrSwift?: string
